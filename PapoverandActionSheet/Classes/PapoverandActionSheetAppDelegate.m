@@ -7,6 +7,7 @@
 //
 
 #import "PapoverandActionSheetAppDelegate.h"
+#import "RootViewController.h"
 
 
 @implementation PapoverandActionSheetAppDelegate
@@ -21,9 +22,13 @@
 
     // Override point for customization after application launch.
 	
-	firstViewController=[[FirstViewController alloc]init];
-	
-	[self.window addSubview:firstViewController.view];
+//	firstViewController=[[FirstViewController alloc]init];
+//	
+//	[self.window addSubview:firstViewController.view];
+    
+    
+    RootViewController *root=[[RootViewController alloc]initWithNibName:@"RootViewController" bundle:nil];
+    [self.window addSubview:root.view];
 
     [self.window makeKeyAndVisible];
 

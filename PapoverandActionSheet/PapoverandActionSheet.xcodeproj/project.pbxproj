@@ -17,6 +17,8 @@
 		28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D801B30F44B63D00FB423F /* CoreData.framework */; };
 		839C16691499D94500FE236F /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 839C16671499D94500FE236F /* FirstViewController.m */; };
 		839C166A1499D94500FE236F /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 839C16681499D94500FE236F /* FirstViewController.xib */; };
+		A1920FFA16EC610600C2E356 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1920FF816EC610600C2E356 /* RootViewController.m */; };
+		A1920FFB16EC610600C2E356 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1920FF916EC610600C2E356 /* RootViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,9 @@
 		839C16671499D94500FE236F /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		839C16681499D94500FE236F /* FirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* PapoverandActionSheet-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PapoverandActionSheet-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		A1920FF716EC610600C2E356 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = SOURCE_ROOT; };
+		A1920FF816EC610600C2E356 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = SOURCE_ROOT; };
+		A1920FF916EC610600C2E356 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +60,9 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A1920FF716EC610600C2E356 /* RootViewController.h */,
+				A1920FF816EC610600C2E356 /* RootViewController.m */,
+				A1920FF916EC610600C2E356 /* RootViewController.xib */,
 				1D3623240D0F684500981E51 /* PapoverandActionSheetAppDelegate.h */,
 				1D3623250D0F684500981E51 /* PapoverandActionSheetAppDelegate.m */,
 				839C16661499D94500FE236F /* FirstViewController.h */,
@@ -165,6 +173,7 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				839C166A1499D94500FE236F /* FirstViewController.xib in Resources */,
+				A1920FFB16EC610600C2E356 /* RootViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +188,7 @@
 				1D3623260D0F684500981E51 /* PapoverandActionSheetAppDelegate.m in Sources */,
 				28193055112F811F00ECF9B4 /* PapoverandActionSheet.xcdatamodeld in Sources */,
 				839C16691499D94500FE236F /* FirstViewController.m in Sources */,
+				A1920FFA16EC610600C2E356 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,11 +205,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PapoverandActionSheet_Prefix.pch;
 				INFOPLIST_FILE = "PapoverandActionSheet-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = PapoverandActionSheet;
 				SDKROOT = iphoneos;
 				"SDKROOT[arch=*]" = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -211,10 +223,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PapoverandActionSheet_Prefix.pch;
 				INFOPLIST_FILE = "PapoverandActionSheet-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = PapoverandActionSheet;
 				SDKROOT = iphoneos5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

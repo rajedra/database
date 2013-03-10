@@ -26,11 +26,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-	UIPopoverController *popover=[[UIPopoverController alloc]init];
-	UIActionSheet *actinsheet=[[UIActionSheet alloc]initWithTitle:nil delegate:self cancelButtonTitle:@"cancel" destructiveButtonTitle:@"destructive" otherButtonTitles:@"one",@"Two",nil];
-    [actinsheet showInView:popover];
-	[actinsheet release];
-}
+	}
 
 
 

@@ -29,7 +29,11 @@
     // Do any additional setup after loading the view from its nib.
     
     //this is view did load ,it gets executed only onece when view is loaded
-    //svn test 
+    //svn test
+    
+    
+    
+    //data is downloaded
 }
 
 - (void)viewDidUnload
